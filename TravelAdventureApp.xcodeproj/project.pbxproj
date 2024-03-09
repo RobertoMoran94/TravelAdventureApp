@@ -21,6 +21,9 @@
 		753C67992B9BFCE900034510 /* SavedPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753C67982B9BFCE900034510 /* SavedPlacesViewController.swift */; };
 		753C679B2B9BFCF000034510 /* AccountDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753C679A2B9BFCF000034510 /* AccountDetailsViewController.swift */; };
 		753C679D2B9BFDF900034510 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753C679C2B9BFDF900034510 /* HomeViewController.swift */; };
+		753C67A02B9C15EF00034510 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753C679F2B9C15EF00034510 /* Movie.swift */; };
+		753C67A22B9C167200034510 /* MoviesNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753C67A12B9C167200034510 /* MoviesNetworkClient.swift */; };
+		753C67A52B9C19E300034510 /* NetworkURLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753C67A42B9C19E300034510 /* NetworkURLManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		753C67982B9BFCE900034510 /* SavedPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPlacesViewController.swift; sourceTree = "<group>"; };
 		753C679A2B9BFCF000034510 /* AccountDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsViewController.swift; sourceTree = "<group>"; };
 		753C679C2B9BFDF900034510 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		753C679F2B9C15EF00034510 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		753C67A12B9C167200034510 /* MoviesNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesNetworkClient.swift; sourceTree = "<group>"; };
+		753C67A42B9C19E300034510 /* NetworkURLManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkURLManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +180,7 @@
 		753C677E2B9BF9F200034510 /* ServiceModule */ = {
 			isa = PBXGroup;
 			children = (
+				753C67A62B9C1A0300034510 /* Movies */,
 			);
 			path = ServiceModule;
 			sourceTree = "<group>";
@@ -181,6 +188,7 @@
 		753C677F2B9BF9FE00034510 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				753C679F2B9C15EF00034510 /* Movie.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -334,6 +342,23 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		753C67A32B9C19D200034510 /* NetworkURLManager */ = {
+			isa = PBXGroup;
+			children = (
+				753C67A42B9C19E300034510 /* NetworkURLManager.swift */,
+			);
+			path = NetworkURLManager;
+			sourceTree = "<group>";
+		};
+		753C67A62B9C1A0300034510 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				753C67A32B9C19D200034510 /* NetworkURLManager */,
+				753C67A12B9C167200034510 /* MoviesNetworkClient.swift */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -468,10 +493,13 @@
 				753C67532B9BF83600034510 /* TravelAdventureApp.xcdatamodeld in Sources */,
 				753C67492B9BF83600034510 /* AppDelegate.swift in Sources */,
 				753C679B2B9BFCF000034510 /* AccountDetailsViewController.swift in Sources */,
+				753C67A22B9C167200034510 /* MoviesNetworkClient.swift in Sources */,
+				753C67A02B9C15EF00034510 /* Movie.swift in Sources */,
 				753C67952B9BFCD800034510 /* TravelDetailsViewController.swift in Sources */,
 				753C679D2B9BFDF900034510 /* HomeViewController.swift in Sources */,
 				753C674B2B9BF83600034510 /* SceneDelegate.swift in Sources */,
 				753C67972B9BFCE100034510 /* SearchPlacesViewController.swift in Sources */,
+				753C67A52B9C19E300034510 /* NetworkURLManager.swift in Sources */,
 				753C67842B9BFA2E00034510 /* MainTabViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
